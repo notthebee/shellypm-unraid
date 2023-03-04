@@ -1,0 +1,30 @@
+Menu="Utilities"
+Icon="shelly.png"
+Title="Shelly Power Monitor"
+---
+<?php
+$shellypm_cfg 			= parse_plugin_cfg("shellypm",true);
+$shellypm_device_ip	= isset($shellypm_cfg['DEVICE_IP']) ? $shellypm_cfg['DEVICE_IP'] : "";
+$shellypm_uirefresh 		= isset($shellypm_cfg['UIREFRESH']) ? $shellypm_cfg['UIREFRESH'] : "1000";
+?>
+
+<form markdown="1" method="POST" action="/update.php" target="progressFrame">
+<input type="hidden" name="#file" value="shellypm/shellypm.cfg" />
+
+Device IP:
+: <input id="DEVICE_IP" type="text" class="stopped" name="DEVICE_IP" maxlength="15" value="<?=$shellypm_device_ip;?>" title="" placeholder="" >  
+
+UI Refresh rate (Milliseconds):
+: <input type="text" name="UIREFRESH" class="narrow" maxlength="50" value="<?=$shellypm_uirefresh;?>" placeholder="1000">
+
+ <input id="DEFAULT" class="stopped" type="submit" value="Default" onClick="resetDATA(this.form)">
+: <input id="btnApply" type="submit" value="Apply"><input type="button" value="Done" onClick="done()">
+</form>
+
+
+<script type="text/javascript">
+function resetDATA(form) {
+	form.DEVICE_IP.value = "";
+  form.UIREFRESH.value = 1000;
+}
+</script>

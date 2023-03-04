@@ -1,22 +1,20 @@
 <?xml version='1.0' standalone='yes'?>
 <!DOCTYPE PLUGIN [
-<!ENTITY name      "tasmotapm">
-<!ENTITY author    "Flippo24">
-<!ENTITY version   "2021.03.24">
-<!ENTITY launch    "Settings/TasmotaPMSettings">
-<!ENTITY gitURL    "https://raw.githubusercontent.com/Flippo24/&name;-unraid/main">
+<!ENTITY name      "shellypm">
+<!ENTITY author    "notthebee">
+<!ENTITY version   "2023.03.4">
+<!ENTITY launch    "Settings/ShellyPMSettings">
+<!ENTITY gitURL    "https://raw.githubusercontent.com/notthebee/&name;-unraid/main">
 <!ENTITY pluginURL "&gitURL;/&name;.plg">
 <!ENTITY pkgURL    "&gitURL;/pkg">
 <!ENTITY plgPATH   "/boot/config/plugins/&name;">
 <!ENTITY plgNAME   "&name;-&version;-x86_64">
 <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
-<PLUGIN name="&name;" author="&author;" version="&version;" icon="tasmotapm.png" launch="&launch;" pluginURL="&pluginURL;">
+<PLUGIN name="&name;" author="&author;" version="&version;" icon="shelly.png" launch="&launch;" pluginURL="&pluginURL;">
 <CHANGES>
 ##&name;
-###2021.03.24
-- fix efficiency factor and dashboard moving.
-###2021.03.22
+###2023.03.4
 - Inital release.
 </CHANGES>
 

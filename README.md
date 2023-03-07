@@ -1,6 +1,6 @@
 # shellypm-unraid
 
-Fork of [https://github.com/Flippo24/tasmotapm-unraid](https://github.com/Flippo24/tasmotapm-unraid) adapter for Shelly power meters.
+Fork of [https://github.com/Flippo24/tasmotapm-unraid](https://github.com/Flippo24/tasmotapm-unraid) adapted for Shelly power meters.
 
 Unlike the original plugin, it only displays the power consumption in watts (for now).
 
